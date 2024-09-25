@@ -1,7 +1,8 @@
 # To-do
 
-- Make a go server to render the markdown files in my obsidian vault in html
-- Get rid of git for obsidian vault
+- Style the markdown render
+- Add option to render files inside other folders
+- Maybe create a service to autostar notes server
 - Instalar NixOS
     - https://nixos.org/
     - https://nixos-and-flakes.thiscute.world/

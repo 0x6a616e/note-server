@@ -9,6 +9,7 @@ import (
 	"github.com/gomarkdown/markdown"
 	"github.com/gomarkdown/markdown/html"
 	"github.com/gomarkdown/markdown/parser"
+	"github.com/microcosm-cc/bluemonday"
 
 	"github.com/0x6a616e/notes/templates"
 )
@@ -49,14 +50,20 @@ func mdToHTML(md []byte) []byte {
 	return markdown.Render(doc, renderer)
 }
 
+func sanitizeHTML(rawHtml []byte) []byte {
+	p := bluemonday.UGCPolicy()
+	return p.SanitizeBytes(rawHtml)
+}
+
 func renderFile(w http.ResponseWriter, r *http.Request) {
 	filename := r.PathValue("filename")
 	md, err := os.ReadFile("notes/" + filename)
 	if err != nil {
 		log.Println(err)
 	}
-	html := mdToHTML(md)
-	if err = templates.File(string(html)).Render(r.Context(), w); err != nil {
+	rawHtml := mdToHTML(md)
+	sanitizedHtml := sanitizeHTML(rawHtml)
+	if err = templates.File(string(sanitizedHtml)).Render(r.Context(), w); err != nil {
 		log.Println(err)
 	}
 }
