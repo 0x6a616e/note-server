@@ -1,0 +1,374 @@
+# To-do
+
+- Make a go server to render the markdown files in my obsidian vault in html
+- Get rid of git for obsidian vault
+- Instalar NixOS
+    - https://nixos.org/
+    - https://nixos-and-flakes.thiscute.world/
+    Software to configure:
+        - [x] sddm
+        - hyprland
+        - hyprpaper
+        - hyprlock
+        - hypridle
+        - file manager
+        - rofi
+        - waybar
+        - kitty
+        - zsh
+        - kanata
+            - Instead of using kanata I could try [this](https://wiki.hyprland.org/Configuring/Uncommon-tips--tricks/#remap-caps-lock-to-ctrl)
+        - firefox
+        - ssh hosts
+        - password-store
+            - passmenu for rofi
+        - configure pika-backups
+        - make bluetooth work
+        - configure all buttons on the f row
+        - vencord
+        - lazygit
+        - nvim
+            - clang-format?
+        - obsidian
+        - dunst
+        - vlc
+- set a live usb on my old usb
+    - https://www.ventoy.net/en/index.html
+    - https://netboot.xyz/
+    - https://medicatusb.com/
+- organize my nixos-config
+    - [Based on this](https://git.sr.ht/~misterio/nix-config)
+- Clean my repos
+- Decide if I want a home server
+    - maybe self-host gitlab (https://about.gitlab.com/features/)
+- Decide if I want a physical security key
+- Proyecto IA
+    - https://www.coursera.org/specializations/machine-learning-introduction
+    - Rehacer IA
+        - https://langchain-ai.github.io/langgraph/tutorials/introduction/
+        - https://langchain-ai.github.io/langgraphjs/how-tos/human-in-the-loop/
+    - Implement own model
+    - https://github.com/gomarkdown/markdown
+    - https://github.com/microcosm-cc/bluemonday
+    - admin view
+- Pending media
+    - add the links of yt projects to watch later
+    - https://www.youtube.com/feed/subscriptions
+    - https://www.youtube.com/playlist?list=WL
+    - https://soundcloud.com/kudasaibeats/vibrancy
+    - https://soundcloud.com/mkultratunes/versa-x-fugitives-7inn-welcome-mustard
+    - https://soundcloud.com/angelcannonmusic/s-y-n-a-p-s-e
+    - https://soundcloud.com/sound-transitions/premiere-noge-junglist-on-my-mind
+    - https://soundcloud.com/gangsterblack/katy-perry-kiss-me-quattroteque-remix
+    - https://soundcloud.com/liltexas/description-of-evil
+    - https://soundcloud.com/sublabmusic/sublab-skxllflower-eclipse
+- Programación competitiva
+    - Potencialmente pasar mis notas de progra a obsidian
+    - Problemas del concurso
+        - https://vjudge.net/problem/UVA-10037
+        - https://vjudge.net/problem/UVA-12563
+    - https://blogs.iteso.mx/acm/1-primera-fase-granpremiomx/sobre-los-concursos-del-granpremiomx2024/
+    - https://youtu.be/OTNe0eV8418?si=NVV1Da9ddr726x2c
+    - https://classroom.google.com/w/NTUzNDI1MjcwNTE1/t/all
+    - https://neetcode.io/roadmap
+    - [Code Submission Evaluation System](https://cses.fi/problemset/list/)
+    - [Introduction to algorithms](file:///C:/Users/Jan/Downloads/introduction-to-algorithms-4th-edition.pdf)
+    - [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)
+    - [Competitive Programming 3](file:///C:/Users/Jan/Downloads/Competitive%20Programming%203.pdf)
+    - https://drive.google.com/file/d/1BdrjWyVkkk7zPkzfp8o10NzMrnaGYSTy/view
+    - [Teoría de números](https://jgcsr.org/wp-content/uploads/David_M._Burton_Elementary_Number_Theoryz-lib.org_.pdf)
+    - [CodeForces catalog](https://codeforces.com/catalog)
+    - [Algoritmos de programación competitiva](https://cp-algorithms.com/)
+    - https://codeforces.com/gym/105327
+    - https://codeforces.com/gym/105216
+    - [fecha 1 del gran premio 2024](https://codeforces.com/gym/105164)
+    - [Concurso de programación ANIEI 2023](https://codeforces.com/gym/104752)
+    - [The 2023 ICPC Masters Mexico Regional #ICPCMX2023 Edition](https://codeforces.com/gym/104758)
+    - [2023-2024 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/104736)
+    - [2023-2024 ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/104555)
+    - [2023 ICPC Gran Premio de Mexico 2da Fecha](https://codeforces.com/gym/104412)
+    - [2023 ICPC Gran Premio de Mexico 1ra Fecha](https://codeforces.com/gym/104375)
+    - [2022-2023 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/104252)
+    - [2022-2023 ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/103960)
+    - [2022 ICPC Gran Premio de Mexico 2da Fecha](https://codeforces.com/gym/103940)
+    - [2022 ICPC Gran Premio de Mexico 1ra Fecha](https://codeforces.com/gym/103708)
+    - [2021-2022 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/103640)
+    - [2020-2021 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/103185)
+    - [2019-2020 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/102428)
+    - [2017-2018 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/101889)
+    - [Codeforces Round 527 (Div. 3)](https://codeforces.com/contest/1092)
+    - [Codeforces Round 162 (Div. 1)](https://codeforces.com/contest/264)
+    - [Codeforces Round 895 (Div. 3)](https://codeforces.com/contest/1872)
+    - [Codeforces Round 897 (Div. 2)](https://codeforces.com/contest/1867)
+    - [School Team Contest 3 (Winter Computer School 2010/11)](https://codeforces.com/contest/45)
+    - https://codeforces.com/gym/105053
+- Pass my notes to obsidian
+- Concurso IA
+- https://youtu.be/zgFMPbPcOQ0?si=IyqWU9pfbCAdX_qC
+- creep
+- raw
+- it follows
+- Billy Bat
+    - https://youtu.be/QY0h9LdboSU?si=EZbcDHhKEbzXH13D
+- Buckshot Roulette
+- Sacar mi pasaporte
+- Sacar visa
+- Make a hardcore world with all achievements
+    - Check what mods to use
+    - Resource pack
+    - Data packs
+- Proyectos
+    - check out https://www.twingate.com/
+    - Configure [Navi](https://github.com/denisidoro/navi)
+    - https://roadmap.sh/git-github?mc_cid=bf5d51206f
+    - https://cli.github.com/
+    - https://youtu.be/0uSyM2DZoOU?si=HeJKDOZotaXxz0sD
+    - https://youtu.be/G6Qbnitlwjk?si=MpfxEWbXtdQ-kOQC
+    - https://youtu.be/SANSysQlS18?si=j_lxjoGuraSL_F72
+    - https://medium.com/hackernoon/how-the-creators-of-git-do-branches-e6fcc57270fb
+    - Aprender de monorepos
+    - https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/
+    - https://youtu.be/0bmiwsv6LaA?si=g46B5yEc8L-PK9lP
+    - https://youtu.be/sNg0bnMF_qY?si=QQZOX_omNK8r-vLc
+    - https://youtu.be/UoQu9li3xK0?si=uz5IEXPJ9_dZFsSk
+    - https://youtu.be/1ZbQS6pOlSQ?si=35nAEFrD7tJnqVez
+    - https://youtu.be/Lnfzrus7G5s?si=KtOKcwzLi32_mC-u
+    - https://youtu.be/yWOdAr1D2oY?si=WmxYF6B_NWixOe61
+    - https://youtu.be/pOV5tVGZ_yk?si=vM8TDh4t4_YdRWFa
+    - https://youtu.be/LTW_nNZ02KA?si=blddA4dtkBU9BTfa
+    - Pull request de gRPC logo
+    - Implementar mi propio vector
+    - https://refactoring.guru/
+    - Realizar el proyecto 6502
+        - Cambiar todo a c?
+        - quizá usar sockets?
+            - https://www.geeksforgeeks.org/socket-programming-cc/
+        - Cambiar el mapa a std::function en lugar de function pointers (depende de si lo dejo en cpp)
+        - https://www.geeksforgeeks.org/passing-a-function-as-a-parameter-in-cpp/
+        - Cambiar los miembros de la clase a una struct??
+            - https://youtu.be/KWB-gDVuy_I?si=vE_kmqgF4PoFeVPO
+    - Learn Zig
+        - Rehacer proyecto 6502 en zig
+    - Rust
+    - https://www.haskell.org/
+    - https://elixir-lang.org/
+    - https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb
+    - https://www.geeksforgeeks.org/operating-systems/?ref=lbp
+    - https://craftinginterpreters.com/contents.html
+    - https://www.educative.io/path/become-a-c-programmer
+    - https://www.educative.io/courses/debugging-disassembly-reversing-in-linux-x64-architecture
+    - Aprender reverse engineering
+        - https://youtu.be/1d-6Hv1c39c?si=oRKuqjZVofbQa3bD
+    - Aprender sobre malware
+    - https://app.codecrafters.io/catalog
+    - https://www.educative.io/
+    - Learn C#
+    - https://roadmap.sh/
+    - Code my own network protocol
+    - https://lowlevel.academy/
+- Do speedcubing (maybe push for sub 10 ao12)
+- Learn 3BLD
+- Learn FMC (https://fmcsolves.cubing.net/fmc_tutorial_ENG.pdf)
+- Fire Punch
+- Jedi Fallen Order
+- Technical redstone
+    - https://modrinth.com/mod/jade/gallery
+- Nana
+- Destiny
+    - Salvation’s edge
+        - https://d2foundry.gg/w/1770490683?p=0,0,201365942,2173046394&m=0&mw=0
+    - Echoes
+        - https://d2foundry.gg/w/2198166292?p=0,0,3017780555,4293542123&m=0&mw=0
+        - https://d2foundry.gg/w/1886840007?p=1840239774,2749775325,3700496672,3523296417&m=0&mw=1900989425
+        - https://d2foundry.gg/w/2584830733?p=1478423395,2822142346,3017780555,4293542123&m=0&mw=3803457565
+    - https://youtu.be/sFEBSoXG2XI?si=5ibOfLveDCu87drY
+    - https://youtu.be/rixqaBlixC8?si=k_LOtRxuR5W8jPVm
+    - Builds
+        - https://youtu.be/0djPLPlRsco?si=l_FmCq_VU8hd12v5
+        - https://youtu.be/banIa7sp_o8?si=WXj9oI9hndp9zzYo
+        - https://youtu.be/l_0hmVT8IB0?si=Nm0CDF0I_Xlb9lEA
+        - https://youtu.be/i6yjG6hjuWI?si=HtMc7Q8MGFRdUZDv
+        - class exotic hunter galanor / gyrfalcon
+        - add build from ritz that I bookmarked on twitter
+        - https://youtu.be/dm7VHw7orkA?si=728K-ICGAbHYQFwO
+        - materials
+            - https://youtu.be/HdKYosJWSa8?si=vezTBGWwTbycSvIB
+        - build with galanor / gyrfalcon
+        - redo lucky pants build
+    - Onslaught
+        - https://d2foundry.gg/w/1815105249?p=3666208348,269888150,4104185692,3913600130&m=0&mw=0 (do i really need it?)
+            - https://d2foundry.gg/w/2763843899?p=0,0,3017780555,4293542123&m=0&mw=0
+            - https://d2foundry.gg/w/2763843899?p=1840239774,1885400500,3161816588_0,47981717_0&m=0&mw=2697220197
+            - https://d2foundry.gg/w/1453235079?p=0,0,3700496672,3038247973&m=0&mw=0
+            - https://d2foundry.gg/w/568611923?p=0,3301904089,968510818_0,3078487919&m=0&mw=0
+    - Strikes
+        - https://d2foundry.gg/w/2889501828?p=0,269888150,2077819806,3523296417&m=0&mw=0
+        - https://d2foundry.gg/w/1854753405?p=0,3032599245,1556840489,3300816228&m=0&mw=0
+        - https://d2foundry.gg/w/2152484073?p=0,1087426260,3828510309_0,1546637391&m=3336648220&mw=0
+        - https://d2foundry.gg/w/1586231351?p=466087222,3142289711,4071163871_1,2451262963_1&m=1334978104&mw=186337601
+        - https://d2foundry.gg/w/1332123064?p=0,3301904089,1523832109,3078487919&m=0&mw=0
+        - https://d2foundry.gg/w/1854753404?p=0,3301904089,3300816228,3751912585&m=0&mw=0
+        - https://d2foundry.gg/w/3667553455?p=0,2985827016,2869569095,1439600632&m=0&mw=0
+    - Trials
+        - https://d2foundry.gg/w/2738601016?p=0,3301904089,968510818_0,3078487919&m=0&mw=0
+        - https://d2foundry.gg/w/1973107014?p=1840239774,1885400500,3619207468_0,555281244&m=0&mw=186337601
+    - World drops
+        - https://d2foundry.gg/w/867154247?p=0,3301904089,968510818_0,3751912585&m=0&mw=0
+    - Dreaming city
+        - https://d2foundry.gg/w/2140635451?p=0,2985827016,2869569095,1439600632&m=0&mw=0
+    - Solstice
+        - https://d2foundry.gg/w/586671776?p=1482024992,3142289711,3511092054_3,555281244_0&m=941997506&mw=384158423
+    - Catalysts
+    - Raid Mastery
+        - https://youtu.be/aBfVlF4X_Rw?si=YlvlAtaLpyuYxzig
+        - https://youtu.be/Av6JgqwH1Vg?si=xambSRb0XMyDr6T5
+        - https://youtu.be/h5HA6E9zH90?si=uuSzzLCSvtykqB2T
+        - https://youtu.be/BbSFN_17al0?si=P3G7R2FOjiIKhQR3
+        - https://youtu.be/SA5GHZQJ6cM?si=nbUfmkjopabKVVVO
+        - https://youtu.be/UeB4PfDZ8uQ?si=0fjLZgGhmGx_vsFH
+        - https://youtu.be/Jig6FvefdiU?si=XyV7BY6DS-aeWMWr
+        - https://youtu.be/x-lMUvbQltc?si=ZaCwiJIA8neYfTir
+    - Crota’s end
+        - https://d2foundry.gg/w/1034055198?p=839105230,1885400500,525593296,990298390&m=1931066670&mw=0
+    - quests on hunter
+    - Warlock builds:
+        - https://youtu.be/RoUVMPye90Q?si=EFes3vfFmgg1jYqM
+        - rethink which builds to make having into account this:
+            - https://youtu.be/gomrejxnW6s?si=kxWDuMXBKvchKKwS
+            - Euphony dmg
+        - warlock apotheosis / star eaters
+        - warlock hoil / verity
+        - Speaker sight (solar)
+        - Sunbracers
+        - Starfire
+        - Cenotaph well
+        - cenotaph song of flame
+        - Arc souls
+            - Maybe use hellion instead of bleak watcher
+        - Rain of fire
+    - quests on warlock
+    - https://youtu.be/wtzdDNdH224?si=OBugquwXan_OWZl5
+    - Hacer los solo flawless de las mazmorras que me faltan
+    - Ghosts of the deep
+        - https://d2foundry.gg/w/1441805468?p=202670084,2749775325,4620383,3465198467&m=3116569677&mw=0
+    - Warlord’s ruin
+        - https://d2foundry.gg/w/3886719505?p=981914802,3230963543,571791574,990298390&m=2199828458&mw=0
+    - Solo excission gm
+    - Lowmans
+    - [Triunfos](https://bray.tech/)
+- Serial Experiments Lain
+- Borderlands 2
+    - Todos los triunfos
+    - Todas las quests en nivel 80 con todos los personajes
+- https://youtu.be/zzBmOeYmN_M?si=CygpozsdA8kwX5gM
+- Puella Magi Madoka Magica
+- Sekiro
+    - Guantelete completo
+    - Mod it for higher fps
+    - Maybe use a skin or the sharingan sound for the perilous attacks
+- Frieren
+- Borderlands
+- Stuff from Junji Ito
+- Tales from the borderlands
+- Shangri La Frontier
+- New Tales from the borderlands
+- Mashle
+- Hollow Knight
+- Elfen Lied
+- Borderlands the presequel
+- Nagatoro
+- Undertale
+- Blade of the inmortal
+- Borderlands 3
+- Shōjo Kakumei Utena
+- Grim Dawn
+- Undead and Unluck
+- Binding of Isaac
+- 20th century boys
+- Ultrakill
+- Monster
+- Portal
+- ***The War of Greedy Witches***
+- Portal 2
+- Cube
+- Elden Ring
+- Kagurabachi
+- Lies of P
+- Pacific Rim
+- Jedi Fallen Order
+- In love with the villainess
+- Outlast full series
+- HxH
+- Dark souls series
+- Berserk
+- Bloodbourne
+- Cloverfield
+- tohou
+- Evangelion
+- Plague Inc.
+- Check pending games
+- Human centipede
+- Hajime no Ippo
+- Kingdom
+- Skinamarink
+- Bleach
+- Ergo Proxy
+- Perfect blue
+- Vinland’s Saga
+- Primal
+- Pluto
+- Soul eater
+- Fire force
+- Bocchi the rock
+- Artiswitch
+- Gantz
+- Classroom of the elite
+- Houseki no kuni
+- Wonder Egg Priority
+- Nichijou
+- Golden time
+- Onegairu
+- Tokyo Ghoul
+- Yofukashi no uta
+- D4DJ First Mix
+- Bouto eve
+- Wataten
+- Kakegurui
+- Yahari Ore no Seishun Love Comedy wa Machigatteiru
+- Dororo
+- Onegai Muscle
+- Keijo
+- Tejina-senpai
+- Food Wars
+- Babylon
+- Youjo senki
+- Samurai champloo
+- Ima kara anata wo kyouhaku shimasu
+- Akame ga kill
+- Inuyasha
+- Senko-san
+- Shiki
+- Attack on titan
+- My hero academia
+- The quintessential quintuplets
+- Himouto! Umaru-chan
+- Blue exorcist
+- Twin star exorcist
+- Darling in the Franxx
+- Shimoneta
+- Angels of death
+- Overlord
+- Love is war
+- Eromanga-sensei
+- Parasyte the maxim
+- Plastic memories
+- Terra formars
+- 91 days
+- Kaiji
+- Date a live
+- Ane log
+- Ajin
+- Ane Doki
+- Ángel beats
+- Anohana
+- Seguir con la lista de google tasks
