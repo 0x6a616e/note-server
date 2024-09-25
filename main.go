@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/0x6a616e/notes/templates"
+	"github.com/a-h/templ"
 )
 
 func logging(next http.Handler) http.Handler {
@@ -15,6 +16,10 @@ func logging(next http.Handler) http.Handler {
 		next.ServeHTTP(w, r)
 		log.Println(r.Method, r.URL.Path, time.Since(start))
 	})
+}
+
+func renderPage(w http.ResponseWriter, r *http.Request, content templ.Component) error {
+	return templates.Layout(content).Render(r.Context(), w)
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
@@ -26,7 +31,8 @@ func index(w http.ResponseWriter, r *http.Request) {
 	for _, file := range files {
 		entries = append(entries, file.Name())
 	}
-	if err = templates.Index(entries).Render(r.Context(), w); err != nil {
+	content := templates.Index(entries)
+	if err = renderPage(w, r, content); err != nil {
 		log.Println(err)
 	}
 }
