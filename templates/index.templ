@@ -3,7 +3,15 @@ package templates
 import "fmt"
 
 templ Index(entries []string) {
-    for _, entry := range entries {
-        <a href={ templ.URL(fmt.Sprintf("notes/%s", entry)) }> { entry } </a>
-    }
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Mis notas</title>
+        </head>
+        <body>
+            for _, entry := range entries {
+                <a href={ templ.URL(fmt.Sprintf("notes/%s", entry)) }> { entry } </a>
+            }
+        </body>
+    </html>
 }

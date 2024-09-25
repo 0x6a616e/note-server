@@ -1,13 +1,13 @@
 package templates
 
-templ Layout(contents templ.Component) {
+templ File(html string) {
     <!DOCTYPE html>
     <html>
         <head>
             <title>Mis notas</title>
         </head>
         <body>
-            @contents
+            @templ.Raw(html)
         </body>
     </html>
 }

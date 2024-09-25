@@ -6,8 +6,11 @@ import (
 	"os"
 	"time"
 
+	"github.com/gomarkdown/markdown"
+	"github.com/gomarkdown/markdown/html"
+	"github.com/gomarkdown/markdown/parser"
+
 	"github.com/0x6a616e/notes/templates"
-	"github.com/a-h/templ"
 )
 
 func logging(next http.Handler) http.Handler {
@@ -16,10 +19,6 @@ func logging(next http.Handler) http.Handler {
 		next.ServeHTTP(w, r)
 		log.Println(r.Method, r.URL.Path, time.Since(start))
 	})
-}
-
-func renderPage(w http.ResponseWriter, r *http.Request, content templ.Component) error {
-	return templates.Layout(content).Render(r.Context(), w)
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
@@ -31,13 +30,35 @@ func index(w http.ResponseWriter, r *http.Request) {
 	for _, file := range files {
 		entries = append(entries, file.Name())
 	}
-	content := templates.Index(entries)
-	if err = renderPage(w, r, content); err != nil {
+	if err = templates.Index(entries).Render(r.Context(), w); err != nil {
 		log.Println(err)
 	}
 }
 
+func mdToHTML(md []byte) []byte {
+	// create markdown parser with extensions
+	extensions := parser.CommonExtensions | parser.AutoHeadingIDs | parser.NoEmptyLineBeforeBlock
+	p := parser.NewWithExtensions(extensions)
+	doc := p.Parse(md)
+
+	// create HTML renderer with extensions
+	htmlFlags := html.CommonFlags | html.HrefTargetBlank | html.TOC
+	opts := html.RendererOptions{Flags: htmlFlags}
+	renderer := html.NewRenderer(opts)
+
+	return markdown.Render(doc, renderer)
+}
+
 func renderFile(w http.ResponseWriter, r *http.Request) {
+	filename := r.PathValue("filename")
+	md, err := os.ReadFile("notes/" + filename)
+	if err != nil {
+		log.Println(err)
+	}
+	html := mdToHTML(md)
+	if err = templates.File(string(html)).Render(r.Context(), w); err != nil {
+		log.Println(err)
+	}
 }
 
 func newMux() *http.ServeMux {
