@@ -1,7 +1,9 @@
 package templates
 
+import "fmt"
+
 templ Index(entries []string) {
     for _, entry := range entries {
-        <a href={ templ.URL(entry) }> Hola </a>
+        <a href={ templ.URL(fmt.Sprintf("notes/%s", entry)) }> { entry } </a>
     }
 }

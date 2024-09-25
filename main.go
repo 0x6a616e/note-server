@@ -24,16 +24,20 @@ func index(w http.ResponseWriter, r *http.Request) {
 	}
 	entries := []string{}
 	for _, file := range files {
-		entries = append(entries, "notes/"+file.Name())
+		entries = append(entries, file.Name())
 	}
 	if err = templates.Index(entries).Render(r.Context(), w); err != nil {
 		log.Println(err)
 	}
 }
 
+func renderFile(w http.ResponseWriter, r *http.Request) {
+}
+
 func newMux() *http.ServeMux {
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /notes", index)
+	mux.HandleFunc("GET /notes/{filename}", renderFile)
 
 	return mux
 }
