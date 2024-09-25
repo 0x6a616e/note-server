@@ -1,10 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"time"
+
+	"github.com/0x6a616e/notes/templates"
 )
 
 func logging(next http.Handler) http.Handler {
@@ -15,13 +17,23 @@ func logging(next http.Handler) http.Handler {
 	})
 }
 
-func greet(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello World! %s", time.Now())
+func index(w http.ResponseWriter, r *http.Request) {
+	files, err := os.ReadDir("notes/")
+	if err != nil {
+		log.Println(err)
+	}
+	entries := []string{}
+	for _, file := range files {
+		entries = append(entries, "notes/"+file.Name())
+	}
+	if err = templates.Index(entries).Render(r.Context(), w); err != nil {
+		log.Println(err)
+	}
 }
 
 func newMux() *http.ServeMux {
 	mux := http.NewServeMux()
-	mux.HandleFunc("GET /", greet)
+	mux.HandleFunc("GET /notes", index)
 
 	return mux
 }
