@@ -2,8 +2,8 @@
 :root {
     --background: #1e1e2e;   /* Dark background */
     --foreground: #cdd6f4;   /* Text color */
-    --highlight: #f38ba8;    /* Accent color */
-    --link-hover: #94e2d5;   /* Hover color */
+    --highlight: #f5c2e7;    /* Accent color */
+    --link-hover: #f5c2e7;   /* Hover color */
     --border-color: #45475a; /* Border color */
 }
 

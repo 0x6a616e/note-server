@@ -1,0 +1,164 @@
+/* Catppuccin Mocha inspired dark theme for rendered Markdown */
+:root {
+    --background: #1e1e2e;   /* Dark background */
+    --foreground: #cdd6f4;   /* Text color */
+    --highlight: #f5c2e7;    /* Accent color for headers */
+    --link-color: #f38ba8;   /* Link color */
+    --blockquote-bg: #313244; /* Blockquote background */
+    --code-bg: #45475a;      /* Code block background */
+    --border-color: #585b70; /* Border color */
+    --code-text: #f9e2af;    /* Inline code text color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--background);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--highlight);
+    margin-bottom: 16px;
+    margin-top: 24px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 16px;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--link-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--highlight);
+}
+
+/* Blockquotes */
+blockquote {
+    background-color: var(--blockquote-bg);
+    border-left: 5px solid var(--highlight);
+    padding: 10px 20px;
+    margin: 16px 0;
+    color: var(--foreground);
+    border-radius: 5px;
+    font-style: italic;
+}
+
+/* Inline code */
+code {
+    background-color: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--code-text);
+}
+
+/* Code blocks */
+pre {
+    background-color: var(--code-bg);
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--foreground);
+    margin-bottom: 16px;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Horizontal rule */
+hr {
+    border: 1px solid var(--border-color);
+    margin: 24px 0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+
+table th {
+    background-color: var(--code-bg);
+    color: var(--foreground);
+}
+
+table td {
+    background-color: var(--background);
+}

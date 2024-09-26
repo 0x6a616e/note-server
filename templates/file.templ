@@ -2,12 +2,17 @@ package templates
 
 templ File(html string) {
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
         <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Mis notas</title>
+            <link rel="stylesheet" href="/assets/markdown_style.css">
         </head>
         <body>
-            @templ.Raw(html)
+            <div class="container">
+                @templ.Raw(html)
+            </div>
         </body>
     </html>
 }

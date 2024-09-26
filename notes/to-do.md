@@ -6,7 +6,7 @@
 - Instalar NixOS
     - https://nixos.org/
     - https://nixos-and-flakes.thiscute.world/
-    Software to configure:
+    - Software to configure:
         - [x] sddm
         - hyprland
         - hyprpaper
