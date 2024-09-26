@@ -4,14 +4,22 @@ import "fmt"
 
 templ Index(entries []string) {
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
         <head>
             <title>Mis notas</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="/assets/index_style.css">
         </head>
         <body>
-            for _, entry := range entries {
-                <a href={ templ.URL(fmt.Sprintf("notes/%s", entry)) }> { entry } </a>
-            }
+            <div class="container">
+                <h1>Mis Notas</h1>
+                <ul class="file-list">
+                    for _, entry := range entries {
+                        <li><a href={ templ.URL(fmt.Sprintf("notes/%s", entry)) }>{ entry }</a></li>
+                    }
+                </ul>
+            </div>
         </body>
     </html>
 }

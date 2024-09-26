@@ -73,6 +73,9 @@ func newMux() *http.ServeMux {
 	mux.HandleFunc("GET /notes", index)
 	mux.HandleFunc("GET /notes/{filename}", renderFile)
 
+	fs := http.FileServer(http.Dir("assets/"))
+	mux.Handle("/assets/", http.StripPrefix("/assets", fs))
+
 	return mux
 }
 

@@ -1,0 +1,63 @@
+/* Catppuccin Mocha inspired dark theme */
+:root {
+    --background: #1e1e2e;   /* Dark background */
+    --foreground: #cdd6f4;   /* Text color */
+    --highlight: #f38ba8;    /* Accent color */
+    --link-hover: #94e2d5;   /* Hover color */
+    --border-color: #45475a; /* Border color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid var(--border-color);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--highlight);
+    font-size: 2rem;
+}
+
+.file-list {
+    list-style-type: none;
+}
+
+.file-list li {
+    margin: 10px 0;
+}
+
+.file-list a {
+    color: var(--foreground);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.file-list a:hover {
+    background-color: var(--link-hover);
+    color: var(--background);
+}
