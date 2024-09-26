@@ -11,6 +11,7 @@ import (
 	"github.com/gomarkdown/markdown/parser"
 	"github.com/microcosm-cc/bluemonday"
 
+	"github.com/0x6a616e/notes/internal"
 	"github.com/0x6a616e/notes/templates"
 )
 
@@ -27,9 +28,9 @@ func index(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Println(err)
 	}
-	entries := []string{}
+	entries := []internal.File{}
 	for _, file := range files {
-		entries = append(entries, file.Name())
+		entries = append(entries, internal.File{Filename: file.Name()})
 	}
 	if err = templates.Index(entries).Render(r.Context(), w); err != nil {
 		log.Println(err)

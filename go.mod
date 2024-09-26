@@ -6,6 +6,7 @@ require (
 	github.com/a-h/templ v0.2.778
 	github.com/gomarkdown/markdown v0.0.0-20240730141124-034f12af3bf6
 	github.com/microcosm-cc/bluemonday v1.0.27
+	golang.org/x/text v0.17.0
 )
 
 require (

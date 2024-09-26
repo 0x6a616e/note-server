@@ -1,8 +1,11 @@
 package templates
 
-import "fmt"
+import (
+    "fmt"
+    "github.com/0x6a616e/notes/internal"
+)
 
-templ Index(entries []string) {
+templ Index(entries []internal.File) {
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -16,7 +19,7 @@ templ Index(entries []string) {
                 <h1>Mis Notas</h1>
                 <ul class="file-list">
                     for _, entry := range entries {
-                        <li><a href={ templ.URL(fmt.Sprintf("notes/%s", entry)) }>{ entry }</a></li>
+                        <li><a href={ templ.URL(fmt.Sprintf("notes/%s", entry.Filename)) }>{ entry.String() }</a></li>
                     }
                 </ul>
             </div>
