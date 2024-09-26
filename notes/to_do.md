@@ -1,6 +1,6 @@
 # To-do
 
-- Style the markdown render
+- Change the name of the render
 - Add option to render files inside other folders
 - Maybe create a service to autostar notes server
 - Instalar NixOS
