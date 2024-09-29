@@ -5,7 +5,7 @@ import (
     "github.com/0x6a616e/notes/internal"
 )
 
-templ Index(entries []internal.File) {
+templ Index(folder internal.File, entries []internal.File) {
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -16,10 +16,10 @@ templ Index(entries []internal.File) {
         </head>
         <body>
             <div class="container">
-                <h1>Mis Notas</h1>
+                <h1>{ folder.String() }</h1>
                 <ul class="file-list">
                     for _, entry := range entries {
-                        <li><a href={ templ.URL(fmt.Sprintf("notes/%s", entry.Filename)) }>{ entry.String() }</a></li>
+                        <li><a href={ templ.URL(fmt.Sprintf("/files/%s", entry.Filename)) }>{ entry.String() }</a></li>
                     }
                 </ul>
             </div>

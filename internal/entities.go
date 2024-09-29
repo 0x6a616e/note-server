@@ -12,7 +12,9 @@ type File struct {
 }
 
 func (f File) String() string {
-	filename := strings.TrimSuffix(f.Filename, ".md")
+	pathParts := strings.Split(f.Filename, "/")
+	filename := pathParts[len(pathParts)-1]
+	filename = strings.TrimSuffix(filename, ".md")
 	words := strings.Split(filename, "_")
 	filename = strings.Join(words, " ")
 	caser := cases.Title(language.English)
